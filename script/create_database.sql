@@ -62,7 +62,6 @@ CREATE TABLE IF NOT EXISTS `storemanagement`.`order` (
   `customer_id` INT NULL,
   `date` VARCHAR(45) NULL,
   `delivery_status` VARCHAR(45) NULL,
-  `total_amount` VARCHAR(45) NULL,
   PRIMARY KEY (`order_id`),
   INDEX `customer_id_idx` (`customer_id` ASC) VISIBLE,
   CONSTRAINT `customer_id`
