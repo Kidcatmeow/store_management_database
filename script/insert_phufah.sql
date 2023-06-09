@@ -109,13 +109,13 @@ INSERT INTO `storemanagement`.`employee` (`employee_id`, `employee_fname`, `empl
 -- Table `storemanagement`.`shipping`
 -- -----------------------------------------------------
 INSERT INTO `storemanagement`.`shipping` (`shipping_id`, `orderid`, `customerid`, `shipping_address`, `shipping_method`) VALUES ('1', '1', '1', 'kolkata', 'plane');
-INSERT INTO `storemanagement`.`shipping` (`shipping_id`, `orderid`, `customerid`, `shipping_address`, `shipping_method`) VALUES ('2', '1', '1', 'kolkata', 'plane');
-INSERT INTO `storemanagement`.`shipping` (`shipping_id`, `orderid`, `customerid`, `shipping_address`, `shipping_method`) VALUES ('3', '1', '1', 'kolkata', 'plane');
-INSERT INTO `storemanagement`.`shipping` (`shipping_id`, `orderid`, `customerid`, `shipping_address`, `shipping_method`) VALUES ('4', '1', '1', 'kolkata', 'plane');
-INSERT INTO `storemanagement`.`shipping` (`shipping_id`, `orderid`, `customerid`, `shipping_address`, `shipping_method`) VALUES ('1', '1', '1', 'kolkata', 'plane');
-INSERT INTO `storemanagement`.`shipping` (`shipping_id`, `orderid`, `customerid`, `shipping_address`, `shipping_method`) VALUES ('1', '1', '1', 'kolkata', 'plane');
-INSERT INTO `storemanagement`.`shipping` (`shipping_id`, `orderid`, `customerid`, `shipping_address`, `shipping_method`) VALUES ('1', '1', '1', 'kolkata', 'plane');
-INSERT INTO `storemanagement`.`shipping` (`shipping_id`, `orderid`, `customerid`, `shipping_address`, `shipping_method`) VALUES ('1', '1', '1', 'kolkata', 'plane');
-INSERT INTO `storemanagement`.`shipping` (`shipping_id`, `orderid`, `customerid`, `shipping_address`, `shipping_method`) VALUES ('1', '1', '1', 'kolkata', 'plane');
-INSERT INTO `storemanagement`.`shipping` (`shipping_id`, `orderid`, `customerid`, `shipping_address`, `shipping_method`) VALUES ('1', '1', '1', 'kolkata', 'plane');
+INSERT INTO `storemanagement`.`shipping` (`shipping_id`, `orderid`, `customerid`, `shipping_address`, `shipping_method`) VALUES ('2', '2', '2', 'Phuket', 'car');
+INSERT INTO `storemanagement`.`shipping` (`shipping_id`, `orderid`, `customerid`, `shipping_address`, `shipping_method`) VALUES ('3', '3', '3', 'Mumbai', 'plane');
+INSERT INTO `storemanagement`.`shipping` (`shipping_id`, `orderid`, `customerid`, `shipping_address`, `shipping_method`) VALUES ('4', '4', '4', 'Bangkok', 'car');
+INSERT INTO `storemanagement`.`shipping` (`shipping_id`, `orderid`, `customerid`, `shipping_address`, `shipping_method`) VALUES ('5', '5', '5', 'Chiang mai', 'car');
+INSERT INTO `storemanagement`.`shipping` (`shipping_id`, `orderid`, `customerid`, `shipping_address`, `shipping_method`) VALUES ('6', '6', '6', 'Chiang Rai', 'car');
+INSERT INTO `storemanagement`.`shipping` (`shipping_id`, `orderid`, `customerid`, `shipping_address`, `shipping_method`) VALUES ('7', '7', '7', 'Osaka', 'cargo ship');
+INSERT INTO `storemanagement`.`shipping` (`shipping_id`, `orderid`, `customerid`, `shipping_address`, `shipping_method`) VALUES ('8', '8', '8', 'Tokyo', 'plane');
+INSERT INTO `storemanagement`.`shipping` (`shipping_id`, `orderid`, `customerid`, `shipping_address`, `shipping_method`) VALUES ('9', '9', '9', 'Melbroune', 'cargo ship');
+INSERT INTO `storemanagement`.`shipping` (`shipping_id`, `orderid`, `customerid`, `shipping_address`, `shipping_method`) VALUES ('10', '10', '10', 'Bangkok', 'car');
 

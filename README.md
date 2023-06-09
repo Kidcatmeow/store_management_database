@@ -15,5 +15,7 @@
 ## Add/Delete SQL Scripts
 - Create a new SQL file inside `script` folder
 - Rebuild the image via `docker build -t custom-mysql .`
-- Delete running container with `docker stop custom-mysql && docker rm custom-mysql`
+- Delete running container with 
+  - `docker stop my-container`
+  - `docker rm my-container`
 - Run the container again with `docker run --name my-container -p 1234:3306 -d custom-mysql`
