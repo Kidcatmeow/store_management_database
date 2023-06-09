@@ -1,19 +1,30 @@
+# Custom MySQL
+This custom MySQL image is designed to enhance the development experience for programs that require interaction with MySQL databases. 
+
+It provides a seamless environment by automatically seeding SQL queries stored in the `script` folder during image build, offering a convenient and pre-configured environment, making it easier to set up a local development database.
+
 ## Requirements
 
 1. WSL (windows users) - `wsl --install` --> restart 1 time
 2. [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 
-## Step
+## Usage
 
-1. clone this repo
-2. build the custom image via `docker build -t custom-mysql .`
-3. see if the image is created successfully with `docker images`
-4. run the created image via `docker run --name my-container -p 1234:3306 -d custom-mysql`
-5. see if the container is running with `docker ps`
-6. connect with MYSQL Workbench (specify the port to `1234`)
+### Run the container
+- Windows: `.\start.bat`
+- Mac: `chmod +x start.sh && ./start.sh`
+-  **NOTE**: see if the container is running with `docker ps`
 
-## Add/Delete SQL Scripts
-# Windows
-- type in the terminal:  `.\reapply.bat`
-# Mac
-- coming soon...
+## Connection
+
+### Programmtically
+Java: 
+ ```java
+ Connection con = DriverManager.getConnection("jdbc:mysql://localhost:1234/<database_name>", "root", "1");
+ ```
+### MySQL Workbench
+- create new connection and specify the port to `1234`
+
+### Docker
+- `docker exec -it my-container mysql -u root -p1`
+    
