@@ -1,4 +1,4 @@
-#!/bin/bash
+@echo off
 
 # Build the custom MySQL image
 docker build -t custom-mysql .
