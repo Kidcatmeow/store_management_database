@@ -56,20 +56,6 @@ INSERT INTO `storemanagement`.`order` (`order_id`, `customer_id`, `date`, `deliv
 INSERT INTO `storemanagement`.`order` (`order_id`, `customer_id`, `date`, `delivery_status`) VALUES ('10', '10', '2/06/63', 'not deliver');
 
 
--- -----------------------------------------------------
--- Table `storemanagement`.`orderitem`
--- -----------------------------------------------------
-INSERT INTO `storemanagement`.`orderitem` (`orderitem_id`, `order_id`, `quantity`, `price`, `item_name`, `supplier_id`) VALUES ('1', '1', '11', '2500', 'Marvel Legends Avengers Assemble', '1');
-INSERT INTO `storemanagement`.`orderitem` (`orderitem_id`, `order_id`, `quantity`, `price`, `item_name`, `supplier_id`) VALUES ('2', '2', '8', '2600', 'Mighty Mjolnir Thor Statue', '1');
-INSERT INTO `storemanagement`.`orderitem` (`orderitem_id`, `order_id`, `quantity`, `price`, `item_name`, `supplier_id`) VALUES ('3', '3', '9', '1800', 'Iron Man Mark XLII Limited Edition Figure', '1');
-INSERT INTO `storemanagement`.`orderitem` (`orderitem_id`, `order_id`, `quantity`, `price`, `item_name`, `supplier_id`) VALUES ('4', '4', '2', '800', 'Captain America Shield Collection', '1');
-INSERT INTO `storemanagement`.`orderitem` (`orderitem_id`, `order_id`, `quantity`, `price`, `item_name`, `supplier_id`) VALUES ('5', '5', '3', '1500', 'Black Widow Deadly Origins Statue', '1');
-INSERT INTO `storemanagement`.`orderitem` (`orderitem_id`, `order_id`, `quantity`, `price`, `item_name`, `supplier_id`) VALUES ('6', '6', '5', '4000', 'Hulk Smash Battle Set', '1');
-INSERT INTO `storemanagement`.`orderitem` (`orderitem_id`, `order_id`, `quantity`, `price`, `item_name`, `supplier_id`) VALUES ('7', '7', '19', '3800', 'Golden Luxe Bearbrick', '1');
-INSERT INTO `storemanagement`.`orderitem` (`orderitem_id`, `order_id`, `quantity`, `price`, `item_name`, `supplier_id`) VALUES ('8', '8', '6', '3600', 'Cosmic Galaxy Bearbrick', '1');
-INSERT INTO `storemanagement`.`orderitem` (`orderitem_id`, `order_id`, `quantity`, `price`, `item_name`, `supplier_id`) VALUES ('9', '9', '1', '5000', 'Superman: Man of Steel Deluxe Figure', '1');
-INSERT INTO `storemanagement`.`orderitem` (`orderitem_id`, `order_id`, `quantity`, `price`, `item_name`, `supplier_id`) VALUES ('10', '10', '3', '6000', 'The Flash: Speed Force Showcase', '1');
-
 
 -- -----------------------------------------------------
 -- Table `storemanagement`.`stock`
@@ -84,6 +70,21 @@ INSERT INTO `storemanagement`.`stock` (`stock_id`, `item_name`, `quantity`) VALU
 INSERT INTO `storemanagement`.`stock` (`stock_id`, `item_name`, `quantity`) VALUES ('8', 'Cosmic Galaxy Bearbrick', '100');
 INSERT INTO `storemanagement`.`stock` (`stock_id`, `item_name`, `quantity`) VALUES ('9', 'Superman: Man of Steel Deluxe Figure', '100');
 INSERT INTO `storemanagement`.`stock` (`stock_id`, `item_name`, `quantity`) VALUES ('10', 'The Flash: Speed Force Showcase', '100');
+
+
+-- -----------------------------------------------------
+-- Table `storemanagement`.`orderitem`
+-- -----------------------------------------------------
+INSERT INTO `storemanagement`.`orderitem` (`orderitem_id`, `order_id`, `quantity`, `price`, `stock_id`, `supplier_id`) VALUES ('1', '1', '11', '2500', '1', '1');
+INSERT INTO `storemanagement`.`orderitem` (`orderitem_id`, `order_id`, `quantity`, `price`, `stock_id`, `supplier_id`) VALUES ('2', '2', '8', '2600', '2', '1');
+INSERT INTO `storemanagement`.`orderitem` (`orderitem_id`, `order_id`, `quantity`, `price`, `stock_id`, `supplier_id`) VALUES ('3', '3', '9', '1800', '3', '1');
+INSERT INTO `storemanagement`.`orderitem` (`orderitem_id`, `order_id`, `quantity`, `price`, `stock_id`, `supplier_id`) VALUES ('4', '4', '2', '800', '4', '1');
+INSERT INTO `storemanagement`.`orderitem` (`orderitem_id`, `order_id`, `quantity`, `price`, `stock_id`, `supplier_id`) VALUES ('5', '5', '3', '1500', '5', '1');
+INSERT INTO `storemanagement`.`orderitem` (`orderitem_id`, `order_id`, `quantity`, `price`, `stock_id`, `supplier_id`) VALUES ('6', '6', '5', '4000', '6', '1');
+INSERT INTO `storemanagement`.`orderitem` (`orderitem_id`, `order_id`, `quantity`, `price`, `stock_id`, `supplier_id`) VALUES ('7', '7', '19', '3800', '7', '1');
+INSERT INTO `storemanagement`.`orderitem` (`orderitem_id`, `order_id`, `quantity`, `price`, `stock_id`, `supplier_id`) VALUES ('8', '8', '6', '3600', '8', '1');
+INSERT INTO `storemanagement`.`orderitem` (`orderitem_id`, `order_id`, `quantity`, `price`, `stock_id`, `supplier_id`) VALUES ('9', '9', '1', '5000', '9', '1');
+INSERT INTO `storemanagement`.`orderitem` (`orderitem_id`, `order_id`, `quantity`, `price`, `stock_id`, `supplier_id`) VALUES ('10', '10', '3', '6000', '10', '1');
 
 -- -----------------------------------------------------
 -- Table `storemanagement`.`employee`
