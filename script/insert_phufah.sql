@@ -1,16 +1,16 @@
 -- -----------------------------------------------------
--- Table `storemanagement`.`user`
+-- Table `storemanagement`.`users`
 -- -----------------------------------------------------
-INSERT INTO `storemanagement`.`user` (`user_id`, `username`, `password`) VALUES ('1', 'khing', '1');
-INSERT INTO `storemanagement`.`user` (`user_id`, `username`, `password`) VALUES ('2', 'phufah', '123');
-INSERT INTO `storemanagement`.`user` (`user_id`, `username`, `password`) VALUES ('3', 'kidcat', '4');
-INSERT INTO `storemanagement`.`user` (`user_id`, `username`, `password`) VALUES ('4', 'pear', '15235');
-INSERT INTO `storemanagement`.`user` (`user_id`, `username`, `password`) VALUES ('5', 'dodo', '151dsd');
-INSERT INTO `storemanagement`.`user` (`user_id`, `username`, `password`) VALUES ('6', 'albert', '231231');
-INSERT INTO `storemanagement`.`user` (`user_id`, `username`, `password`) VALUES ('7', 'bob', '1999');
-INSERT INTO `storemanagement`.`user` (`user_id`, `username`, `password`) VALUES ('8', 'tedison', '45858');
-INSERT INTO `storemanagement`.`user` (`user_id`, `username`, `password`) VALUES ('9', 'josh', '4451');
-INSERT INTO `storemanagement`.`user` (`user_id`, `username`, `password`) VALUES ('10', 'ted', '187');
+INSERT INTO `storemanagement`.`users` (`user_id`, `username`, `password`) VALUES ('1', 'khing', '1');
+INSERT INTO `storemanagement`.`users` (`user_id`, `username`, `password`) VALUES ('2', 'phufah', '123');
+INSERT INTO `storemanagement`.`users` (`user_id`, `username`, `password`) VALUES ('3', 'kidcat', '4');
+INSERT INTO `storemanagement`.`users` (`user_id`, `username`, `password`) VALUES ('4', 'pear', '15235');
+INSERT INTO `storemanagement`.`users` (`user_id`, `username`, `password`) VALUES ('5', 'dodo', '151dsd');
+INSERT INTO `storemanagement`.`users` (`user_id`, `username`, `password`) VALUES ('6', 'albert', '231231');
+INSERT INTO `storemanagement`.`users` (`user_id`, `username`, `password`) VALUES ('7', 'bob', '1999');
+INSERT INTO `storemanagement`.`users` (`user_id`, `username`, `password`) VALUES ('8', 'tedison', '45858');
+INSERT INTO `storemanagement`.`users` (`user_id`, `username`, `password`) VALUES ('9', 'josh', '4451');
+INSERT INTO `storemanagement`.`users` (`user_id`, `username`, `password`) VALUES ('10', 'ted', '187');
 
 -- -----------------------------------------------------
 -- Table `storemanagement`.`supplier`

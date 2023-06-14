@@ -30,7 +30,7 @@ CREATE TABLE IF NOT EXISTS `storemanagement`.`customer` (
 -- -----------------------------------------------------
 -- Table `storemanagement`.`user`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `storemanagement`.`user` (
+CREATE TABLE IF NOT EXISTS `storemanagement`.`users` (
                                                         `user_id` INT NOT NULL,
                                                         `username` VARCHAR(45) NULL,
     `password` VARCHAR(45) NULL,
@@ -100,8 +100,8 @@ CREATE TABLE IF NOT EXISTS `storemanagement`.`stock` (
 CREATE TABLE IF NOT EXISTS `storemanagement`.`orderitem` (
                                                              `orderitem_id` INT NOT NULL,
                                                              `order_id` INT NULL,
-                                                             `quantity` VARCHAR(45) NULL,
-    `price` VARCHAR(45) NULL,
+                                                             `quantity` INT NULL,
+    `price` DOUBLE NULL,
     `stock_id` INT NULL,
     `supplier_id` INT NULL,
     PRIMARY KEY (`orderitem_id`),
