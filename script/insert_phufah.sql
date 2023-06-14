@@ -1,7 +1,7 @@
 -- -----------------------------------------------------
 -- Table `storemanagement`.`users`
 -- -----------------------------------------------------
-INSERT INTO `storemanagement`.`users` (`user_id`, `username`, `password`) VALUES ('1', 'khing', '1');
+INSERT INTO `storemanagement`.`users` (`user_id`, `username`, `password`) VALUES ('1', 'arm', '1234');
 INSERT INTO `storemanagement`.`users` (`user_id`, `username`, `password`) VALUES ('2', 'phufah', '123');
 INSERT INTO `storemanagement`.`users` (`user_id`, `username`, `password`) VALUES ('3', 'kidcat', '4');
 INSERT INTO `storemanagement`.`users` (`user_id`, `username`, `password`) VALUES ('4', 'pear', '15235');
@@ -42,18 +42,18 @@ INSERT INTO `storemanagement`.`customer` (`customer_id`, `customer_fname`, `cust
 
 
 -- -----------------------------------------------------
--- Table `storemanagement`.`order`
+-- Table `storemanagement`.`orders`
 -- -----------------------------------------------------
-INSERT INTO `storemanagement`.`order` (`order_id`, `customer_id`, `date`, `delivery_status`) VALUES ('1', '1', '06/01/63', 'delivered');
-INSERT INTO `storemanagement`.`order` (`order_id`, `customer_id`, `date`, `delivery_status`) VALUES ('2', '2', '09/06/63', 'not deliver');
-INSERT INTO `storemanagement`.`order` (`order_id`, `customer_id`, `date`, `delivery_status`) VALUES ('3', '3', '09/06/63', 'not deliver');
-INSERT INTO `storemanagement`.`order` (`order_id`, `customer_id`, `date`, `delivery_status`) VALUES ('4', '4', '23/03/63', 'delivered');
-INSERT INTO `storemanagement`.`order` (`order_id`, `customer_id`, `date`, `delivery_status`) VALUES ('5', '5', '23/06/63', 'not deliver');
-INSERT INTO `storemanagement`.`order` (`order_id`, `customer_id`, `date`, `delivery_status`) VALUES ('6', '6', '27/04/63', 'delivered');
-INSERT INTO `storemanagement`.`order` (`order_id`, `customer_id`, `date`, `delivery_status`) VALUES ('7', '7', '21/02/63', 'delivered');
-INSERT INTO `storemanagement`.`order` (`order_id`, `customer_id`, `date`, `delivery_status`) VALUES ('8', '8', '23/06/63', 'not deliver');
-INSERT INTO `storemanagement`.`order` (`order_id`, `customer_id`, `date`, `delivery_status`) VALUES ('9', '9', '18/02/63', 'delivered');
-INSERT INTO `storemanagement`.`order` (`order_id`, `customer_id`, `date`, `delivery_status`) VALUES ('10', '10', '2/06/63', 'not deliver');
+INSERT INTO `storemanagement`.`orders` (`order_id`, `customer_id`, `date`, `status`) VALUES ('1', '1', '06/01/63', 'delivered');
+INSERT INTO `storemanagement`.`orders` (`order_id`, `customer_id`, `date`, `status`) VALUES ('2', '2', '09/06/63', 'not deliver');
+INSERT INTO `storemanagement`.`orders` (`order_id`, `customer_id`, `date`, `status`) VALUES ('3', '3', '09/06/63', 'not deliver');
+INSERT INTO `storemanagement`.`orders` (`order_id`, `customer_id`, `date`, `status`) VALUES ('4', '4', '23/03/63', 'delivered');
+INSERT INTO `storemanagement`.`orders` (`order_id`, `customer_id`, `date`, `status`) VALUES ('5', '5', '23/06/63', 'not deliver');
+INSERT INTO `storemanagement`.`orders` (`order_id`, `customer_id`, `date`, `status`) VALUES ('6', '6', '27/04/63', 'delivered');
+INSERT INTO `storemanagement`.`orders` (`order_id`, `customer_id`, `date`, `status`) VALUES ('7', '7', '21/02/63', 'delivered');
+INSERT INTO `storemanagement`.`orders` (`order_id`, `customer_id`, `date`, `status`) VALUES ('8', '8', '23/06/63', 'not deliver');
+INSERT INTO `storemanagement`.`orders` (`order_id`, `customer_id`, `date`, `status`) VALUES ('9', '9', '18/02/63', 'delivered');
+INSERT INTO `storemanagement`.`orders` (`order_id`, `customer_id`, `date`, `status`) VALUES ('10', '10', '2/06/63', 'not deliver');
 
 
 

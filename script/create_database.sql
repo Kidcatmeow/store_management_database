@@ -57,11 +57,11 @@ CREATE TABLE IF NOT EXISTS `storemanagement`.`employee` (
 -- -----------------------------------------------------
 -- Table `storemanagement`.`order`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `storemanagement`.`order` (
+CREATE TABLE IF NOT EXISTS `storemanagement`.`orders` (
                                                          `order_id` INT NOT NULL,
                                                          `customer_id` INT NULL,
                                                          `date` VARCHAR(45) NULL,
-    `delivery_status` VARCHAR(45) NULL,
+    `status` VARCHAR(45) NULL,
     PRIMARY KEY (`order_id`),
     INDEX `customer_id_idx` (`customer_id` ASC) VISIBLE,
     CONSTRAINT `customer_id`
@@ -110,7 +110,7 @@ CREATE TABLE IF NOT EXISTS `storemanagement`.`orderitem` (
     INDEX `stock_id_idx` (`stock_id` ASC) VISIBLE,
     CONSTRAINT `order_id`
     FOREIGN KEY (`order_id`)
-    REFERENCES `storemanagement`.`order` (`order_id`)
+    REFERENCES `storemanagement`.`orders` (`order_id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
     CONSTRAINT `supplier_id`
@@ -157,7 +157,7 @@ CREATE TABLE IF NOT EXISTS `storemanagement`.`shipping` (
     INDEX `customer_id_idx` (`customerid` ASC) VISIBLE,
     CONSTRAINT `orderid`
     FOREIGN KEY (`orderid`)
-    REFERENCES `storemanagement`.`order` (`order_id`)
+    REFERENCES `storemanagement`.`orders` (`order_id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
     CONSTRAINT `customerid`
