@@ -90,15 +90,15 @@ INSERT INTO `storemanagement`.`orderitem` (`orderitem_id`, `order_id`, `quantity
 -- Table `storemanagement`.`employee`
 -- -----------------------------------------------------
 INSERT INTO `storemanagement`.`employee` (`employee_id`, `employee_fname`, `employee_lname`, `gender`, `phone`, `address`, `birthdate`, `email`) VALUES ('1', 'Harper', 'Bennett', 'Female', '126479318', 'Chiang Mai', '02/05/2001', 'Harper@hotmail.com');
-INSERT INTO `storemanagement`.`employee` (`employee_id`, `employee_fname`, `employee_lname`, `gender`, `phone`, `address`, `birthdate`, `email`) VALUES ('2', 'Samuel', 'Foster ', 'Male', '75631698', 'Chiang Rai', '02/05/2001', 'Harper@hotmail.com');
-INSERT INTO `storemanagement`.`employee` (`employee_id`, `employee_fname`, `employee_lname`, `gender`, `phone`, `address`, `birthdate`, `email`) VALUES ('3', 'Lily', 'Russell', 'Female', '24681358', 'Bangkok', '02/05/2001', 'Harper@hotmail.com');
-INSERT INTO `storemanagement`.`employee` (`employee_id`, `employee_fname`, `employee_lname`, `gender`, `phone`, `address`, `birthdate`, `email`) VALUES ('4', 'Owen', 'Peterson', 'Male', '54301895', 'Bangkok', '02/05/2001', 'Harper@hotmail.com');
-INSERT INTO `storemanagement`.`employee` (`employee_id`, `employee_fname`, `employee_lname`, `gender`, `phone`, `address`, `birthdate`, `email`) VALUES ('5', 'Grace', 'Kelly ', 'Female', '03597519', 'Bangkok', '02/05/2001', 'Harper@hotmail.com');
-INSERT INTO `storemanagement`.`employee` (`employee_id`, `employee_fname`, `employee_lname`, `gender`, `phone`, `address`, `birthdate`, `email`) VALUES ('6', 'Noah', 'Sullivan', 'Male', '01357951', 'Bangkok', '02/05/2001', 'Harper@hotmail.com');
-INSERT INTO `storemanagement`.`employee` (`employee_id`, `employee_fname`, `employee_lname`, `gender`, `phone`, `address`, `birthdate`, `email`) VALUES ('7', 'Amelia', 'Richardson', 'Female', '01367981', 'Bangkok', '02/05/2001', 'Harper@hotmail.com');
-INSERT INTO `storemanagement`.`employee` (`employee_id`, `employee_fname`, `employee_lname`, `gender`, `phone`, `address`, `birthdate`, `email`) VALUES ('8', 'Elijah', 'Hayes', 'Male', '54931818', 'Chiang Mai', '02/05/2001', 'Harper@hotmail.com');
-INSERT INTO `storemanagement`.`employee` (`employee_id`, `employee_fname`, `employee_lname`, `gender`, `phone`, `address`, `birthdate`, `email`) VALUES ('9', 'Stella', 'Murphy', 'Female', '66688833', 'Chiang Rai', '02/05/2001', 'Harper@hotmail.com');
-INSERT INTO `storemanagement`.`employee` (`employee_id`, `employee_fname`, `employee_lname`, `gender`, `phone`, `address`, `birthdate`, `email`) VALUES ('10', 'Henry', 'Cooper', 'Male', '18479524', 'Chiang Mai', '02/05/2001', 'Harper@hotmail.com');
+INSERT INTO `storemanagement`.`employee` (`employee_id`, `employee_fname`, `employee_lname`, `gender`, `phone`, `address`, `birthdate`, `email`) VALUES ('2', 'Samuel', 'Foster ', 'Male', '75631698', 'Chiang Rai', '02/05/2001', 'Samuel@hotmail.com');
+INSERT INTO `storemanagement`.`employee` (`employee_id`, `employee_fname`, `employee_lname`, `gender`, `phone`, `address`, `birthdate`, `email`) VALUES ('3', 'Lily', 'Russell', 'Female', '24681358', 'Bangkok', '02/05/2001', 'Lily@hotmail.com');
+INSERT INTO `storemanagement`.`employee` (`employee_id`, `employee_fname`, `employee_lname`, `gender`, `phone`, `address`, `birthdate`, `email`) VALUES ('4', 'Owen', 'Peterson', 'Male', '54301895', 'Bangkok', '02/05/2001', 'Owen@hotmail.com');
+INSERT INTO `storemanagement`.`employee` (`employee_id`, `employee_fname`, `employee_lname`, `gender`, `phone`, `address`, `birthdate`, `email`) VALUES ('5', 'Grace', 'Kelly ', 'Female', '03597519', 'Bangkok', '02/05/2001', 'Grace@hotmail.com');
+INSERT INTO `storemanagement`.`employee` (`employee_id`, `employee_fname`, `employee_lname`, `gender`, `phone`, `address`, `birthdate`, `email`) VALUES ('6', 'Noah', 'Sullivan', 'Male', '01357951', 'Bangkok', '02/05/2001', 'Noah@hotmail.com');
+INSERT INTO `storemanagement`.`employee` (`employee_id`, `employee_fname`, `employee_lname`, `gender`, `phone`, `address`, `birthdate`, `email`) VALUES ('7', 'Amelia', 'Richardson', 'Female', '01367981', 'Bangkok', '02/05/2001', 'Amelia@hotmail.com');
+INSERT INTO `storemanagement`.`employee` (`employee_id`, `employee_fname`, `employee_lname`, `gender`, `phone`, `address`, `birthdate`, `email`) VALUES ('8', 'Elijah', 'Hayes', 'Male', '54931818', 'Chiang Mai', '02/05/2001', 'Elijah@hotmail.com');
+INSERT INTO `storemanagement`.`employee` (`employee_id`, `employee_fname`, `employee_lname`, `gender`, `phone`, `address`, `birthdate`, `email`) VALUES ('9', 'Stella', 'Murphy', 'Female', '66688833', 'Chiang Rai', '02/05/2001', 'Stella@hotmail.com');
+INSERT INTO `storemanagement`.`employee` (`employee_id`, `employee_fname`, `employee_lname`, `gender`, `phone`, `address`, `birthdate`, `email`) VALUES ('10', 'Henry', 'Cooper', 'Male', '18479524', 'Chiang Mai', '02/05/2001', 'Henry@hotmail.com');
 
 
 -- -----------------------------------------------------
