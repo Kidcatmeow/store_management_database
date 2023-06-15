@@ -67,8 +67,8 @@ CREATE TABLE IF NOT EXISTS `storemanagement`.`orders` (
     CONSTRAINT `customer_id`
     FOREIGN KEY (`customer_id`)
     REFERENCES `storemanagement`.`customer` (`customer_id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE)
     ENGINE = InnoDB;
 
 
@@ -111,18 +111,18 @@ CREATE TABLE IF NOT EXISTS `storemanagement`.`orderitem` (
     CONSTRAINT `order_id`
     FOREIGN KEY (`order_id`)
     REFERENCES `storemanagement`.`orders` (`order_id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
+    ON DELETE CASCADE
+    ON UPDATE CASCADE,
     CONSTRAINT `supplier_id`
     FOREIGN KEY (`supplier_id`)
     REFERENCES `storemanagement`.`supplier` (`supplier_id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
+    ON DELETE CASCADE
+    ON UPDATE CASCADE,
     CONSTRAINT `stock_id`
     FOREIGN KEY (`stock_id`)
     REFERENCES `storemanagement`.`stock` (`stock_id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE)
     ENGINE = InnoDB;
 
 
@@ -137,8 +137,8 @@ CREATE TABLE IF NOT EXISTS `storemanagement`.`outofstock` (
     CONSTRAINT `itemname`
     FOREIGN KEY (`itemname`)
     REFERENCES `storemanagement`.`stock` (`item_name`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE)
     ENGINE = InnoDB;
 
 
@@ -158,16 +158,16 @@ CREATE TABLE IF NOT EXISTS `storemanagement`.`shipping` (
     CONSTRAINT `orderid`
     FOREIGN KEY (`orderid`)
     REFERENCES `storemanagement`.`orders` (`order_id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
+    ON DELETE CASCADE
+    ON UPDATE CASCADE,
     CONSTRAINT `customerid`
     FOREIGN KEY (`customerid`)
     REFERENCES `storemanagement`.`customer` (`customer_id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE)
     ENGINE = InnoDB;
 
 
 SET SQL_MODE=@OLD_SQL_MODE;
-SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
+SET FOREIGN_KEY_CHECKS=0;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
