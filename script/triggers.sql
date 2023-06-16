@@ -27,3 +27,17 @@ BEGIN
 end if;
 END;
 //
+
+
+DELIMITER //
+CREATE TRIGGER out_of_stock_del
+    AFTER UPDATE ON stock
+    FOR EACH ROW
+BEGIN
+    IF NEW.quantity >= 1 THEN
+    DELETE FROM outofstock
+    WHERE itemname = NEW.item_name;
+END IF;
+END//
+DELIMITER ;
+
