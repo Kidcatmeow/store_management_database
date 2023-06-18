@@ -44,16 +44,17 @@ INSERT INTO `storemanagement`.`customer` (`customer_id`, `customer_fname`, `cust
 -- -----------------------------------------------------
 -- Table `storemanagement`.`orders`
 -- -----------------------------------------------------
-INSERT INTO `storemanagement`.`orders` (`order_id`, `customer_id`, `date`, `status`) VALUES ('1', '1', '06/01/63', 'delivered');
-INSERT INTO `storemanagement`.`orders` (`order_id`, `customer_id`, `date`, `status`) VALUES ('2', '2', '09/06/63', 'not deliver');
-INSERT INTO `storemanagement`.`orders` (`order_id`, `customer_id`, `date`, `status`) VALUES ('3', '3', '09/06/63', 'not deliver');
-INSERT INTO `storemanagement`.`orders` (`order_id`, `customer_id`, `date`, `status`) VALUES ('4', '4', '23/03/63', 'delivered');
-INSERT INTO `storemanagement`.`orders` (`order_id`, `customer_id`, `date`, `status`) VALUES ('5', '5', '23/06/63', 'not deliver');
-INSERT INTO `storemanagement`.`orders` (`order_id`, `customer_id`, `date`, `status`) VALUES ('6', '6', '27/04/63', 'delivered');
-INSERT INTO `storemanagement`.`orders` (`order_id`, `customer_id`, `date`, `status`) VALUES ('7', '7', '21/02/63', 'delivered');
-INSERT INTO `storemanagement`.`orders` (`order_id`, `customer_id`, `date`, `status`) VALUES ('8', '8', '23/06/63', 'not deliver');
-INSERT INTO `storemanagement`.`orders` (`order_id`, `customer_id`, `date`, `status`) VALUES ('9', '9', '18/02/63', 'delivered');
-INSERT INTO `storemanagement`.`orders` (`order_id`, `customer_id`, `date`, `status`) VALUES ('10', '10', '2/06/63', 'not deliver');
+INSERT INTO `storemanagement`.`orders` (`order_id`, `customer_id`, `date`, `status`) VALUES ('1', '1', '2023-05-06', 'delivered');
+INSERT INTO `storemanagement`.`orders` (`order_id`, `customer_id`, `date`, `status`) VALUES ('2', '2', '2023-05-09', 'delivered');
+INSERT INTO `storemanagement`.`orders` (`order_id`, `customer_id`, `date`, `status`) VALUES ('3', '3', '2023-05-11', 'delivered');
+INSERT INTO `storemanagement`.`orders` (`order_id`, `customer_id`, `date`, `status`) VALUES ('4', '4', '2023-05-12', 'delivered');
+INSERT INTO `storemanagement`.`orders` (`order_id`, `customer_id`, `date`, `status`) VALUES ('5', '5', '2023-05-15', 'delivered');
+INSERT INTO `storemanagement`.`orders` (`order_id`, `customer_id`, `date`, `status`) VALUES ('6', '6', '2023-05-17', 'delivered');
+INSERT INTO `storemanagement`.`orders` (`order_id`, `customer_id`, `date`, `status`) VALUES ('7', '7', '2023-05-19', 'delivered');
+INSERT INTO `storemanagement`.`orders` (`order_id`, `customer_id`, `date`, `status`) VALUES ('8', '8', '2023-05-20', 'delivered');
+INSERT INTO `storemanagement`.`orders` (`order_id`, `customer_id`, `date`, `status`) VALUES ('9', '9', '2023-05-22', 'delivered');
+INSERT INTO `storemanagement`.`orders` (`order_id`, `customer_id`, `date`, `status`) VALUES ('10', '10', '2023-05-25', 'not delivered');
+
 
 
 
@@ -89,16 +90,16 @@ INSERT INTO `storemanagement`.`orderitem` (`orderitem_id`, `order_id`, `quantity
 -- -----------------------------------------------------
 -- Table `storemanagement`.`employee`
 -- -----------------------------------------------------
-INSERT INTO `storemanagement`.`employee` (`employee_id`, `employee_fname`, `employee_lname`, `gender`, `phone`, `address`, `birthdate`, `email`) VALUES ('1', 'Harper', 'Bennett', 'Female', '126479318', 'Chiang Mai', '02/05/2001', 'Harper@hotmail.com');
-INSERT INTO `storemanagement`.`employee` (`employee_id`, `employee_fname`, `employee_lname`, `gender`, `phone`, `address`, `birthdate`, `email`) VALUES ('2', 'Samuel', 'Foster ', 'Male', '75631698', 'Chiang Rai', '02/05/2001', 'Samuel@hotmail.com');
-INSERT INTO `storemanagement`.`employee` (`employee_id`, `employee_fname`, `employee_lname`, `gender`, `phone`, `address`, `birthdate`, `email`) VALUES ('3', 'Lily', 'Russell', 'Female', '24681358', 'Bangkok', '02/05/2001', 'Lily@hotmail.com');
-INSERT INTO `storemanagement`.`employee` (`employee_id`, `employee_fname`, `employee_lname`, `gender`, `phone`, `address`, `birthdate`, `email`) VALUES ('4', 'Owen', 'Peterson', 'Male', '54301895', 'Bangkok', '02/05/2001', 'Owen@hotmail.com');
-INSERT INTO `storemanagement`.`employee` (`employee_id`, `employee_fname`, `employee_lname`, `gender`, `phone`, `address`, `birthdate`, `email`) VALUES ('5', 'Grace', 'Kelly ', 'Female', '03597519', 'Bangkok', '02/05/2001', 'Grace@hotmail.com');
-INSERT INTO `storemanagement`.`employee` (`employee_id`, `employee_fname`, `employee_lname`, `gender`, `phone`, `address`, `birthdate`, `email`) VALUES ('6', 'Noah', 'Sullivan', 'Male', '01357951', 'Bangkok', '02/05/2001', 'Noah@hotmail.com');
-INSERT INTO `storemanagement`.`employee` (`employee_id`, `employee_fname`, `employee_lname`, `gender`, `phone`, `address`, `birthdate`, `email`) VALUES ('7', 'Amelia', 'Richardson', 'Female', '01367981', 'Bangkok', '02/05/2001', 'Amelia@hotmail.com');
-INSERT INTO `storemanagement`.`employee` (`employee_id`, `employee_fname`, `employee_lname`, `gender`, `phone`, `address`, `birthdate`, `email`) VALUES ('8', 'Elijah', 'Hayes', 'Male', '54931818', 'Chiang Mai', '02/05/2001', 'Elijah@hotmail.com');
-INSERT INTO `storemanagement`.`employee` (`employee_id`, `employee_fname`, `employee_lname`, `gender`, `phone`, `address`, `birthdate`, `email`) VALUES ('9', 'Stella', 'Murphy', 'Female', '66688833', 'Chiang Rai', '02/05/2001', 'Stella@hotmail.com');
-INSERT INTO `storemanagement`.`employee` (`employee_id`, `employee_fname`, `employee_lname`, `gender`, `phone`, `address`, `birthdate`, `email`) VALUES ('10', 'Henry', 'Cooper', 'Male', '18479524', 'Chiang Mai', '02/05/2001', 'Henry@hotmail.com');
+INSERT INTO `storemanagement`.`employee` (`employee_id`, `employee_fname`, `employee_lname`, `gender`, `phone`, `address`, `birthdate`, `email`) VALUES ('1', 'Harper', 'Bennett', 'Female', '126479318', 'Chiang Mai', '2001-05-02', 'Harper@hotmail.com');
+INSERT INTO `storemanagement`.`employee` (`employee_id`, `employee_fname`, `employee_lname`, `gender`, `phone`, `address`, `birthdate`, `email`) VALUES ('2', 'Samuel', 'Foster ', 'Male', '75631698', 'Chiang Rai', '2000-07-02', 'Samuel@hotmail.com');
+INSERT INTO `storemanagement`.`employee` (`employee_id`, `employee_fname`, `employee_lname`, `gender`, `phone`, `address`, `birthdate`, `email`) VALUES ('3', 'Lily', 'Russell', 'Female', '24681358', 'Bangkok', '1999-03-12', 'Lily@hotmail.com');
+INSERT INTO `storemanagement`.`employee` (`employee_id`, `employee_fname`, `employee_lname`, `gender`, `phone`, `address`, `birthdate`, `email`) VALUES ('4', 'Owen', 'Peterson', 'Male', '54301895', 'Bangkok', '1999-06-20', 'Owen@hotmail.com');
+INSERT INTO `storemanagement`.`employee` (`employee_id`, `employee_fname`, `employee_lname`, `gender`, `phone`, `address`, `birthdate`, `email`) VALUES ('5', 'Grace', 'Kelly ', 'Female', '03597519', 'Bangkok', '1999-08-01', 'Grace@hotmail.com');
+INSERT INTO `storemanagement`.`employee` (`employee_id`, `employee_fname`, `employee_lname`, `gender`, `phone`, `address`, `birthdate`, `email`) VALUES ('6', 'Noah', 'Sullivan', 'Male', '01357951', 'Bangkok', '1999-10-23', 'Noah@hotmail.com');
+INSERT INTO `storemanagement`.`employee` (`employee_id`, `employee_fname`, `employee_lname`, `gender`, `phone`, `address`, `birthdate`, `email`) VALUES ('7', 'Amelia', 'Richardson', 'Female', '01367981', 'Bangkok', '1998-11-23', 'Amelia@hotmail.com');
+INSERT INTO `storemanagement`.`employee` (`employee_id`, `employee_fname`, `employee_lname`, `gender`, `phone`, `address`, `birthdate`, `email`) VALUES ('8', 'Elijah', 'Hayes', 'Male', '54931818', 'Chiang Mai', '1998-12-11', 'Elijah@hotmail.com');
+INSERT INTO `storemanagement`.`employee` (`employee_id`, `employee_fname`, `employee_lname`, `gender`, `phone`, `address`, `birthdate`, `email`) VALUES ('9', 'Stella', 'Murphy', 'Female', '66688833', 'Chiang Rai', '1998-12-20', 'Stella@hotmail.com');
+INSERT INTO `storemanagement`.`employee` (`employee_id`, `employee_fname`, `employee_lname`, `gender`, `phone`, `address`, `birthdate`, `email`) VALUES ('10', 'Henry', 'Cooper', 'Male', '18479524', 'Chiang Mai', '1997-12-01', 'Henry@hotmail.com');
 
 
 -- -----------------------------------------------------
