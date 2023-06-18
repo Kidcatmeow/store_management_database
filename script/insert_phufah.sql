@@ -11,7 +11,6 @@ INSERT INTO `storemanagement`.`users` (`user_id`, `username`, `password`) VALUES
 INSERT INTO `storemanagement`.`users` (`user_id`, `username`, `password`) VALUES ('8', 'tedison', '45858');
 INSERT INTO `storemanagement`.`users` (`user_id`, `username`, `password`) VALUES ('9', 'josh', '4451');
 INSERT INTO `storemanagement`.`users` (`user_id`, `username`, `password`) VALUES ('10', 'ted', '187');
-
 -- -----------------------------------------------------
 -- Table `storemanagement`.`supplier`
 -- -----------------------------------------------------
@@ -25,7 +24,6 @@ INSERT INTO `storemanagement`.`supplier` (`supplier_id`, `supplier_name`) VALUES
 INSERT INTO `storemanagement`.`supplier` (`supplier_id`, `supplier_name`) VALUES ('8', 'Dreamy Dolls and Toys');
 INSERT INTO `storemanagement`.`supplier` (`supplier_id`, `supplier_name`) VALUES ('9', 'Adventure Playtime Supplies');
 INSERT INTO `storemanagement`.`supplier` (`supplier_id`, `supplier_name`) VALUES ('10', 'Creative Kids Toy Co.');
-
 -- -----------------------------------------------------
 -- Table `storemanagement`.`customer`
 -- -----------------------------------------------------
@@ -39,8 +37,6 @@ INSERT INTO `storemanagement`.`customer` (`customer_id`, `customer_fname`, `cust
 INSERT INTO `storemanagement`.`customer` (`customer_id`, `customer_fname`, `customer_lname`, `email`, `phone`) VALUES ('8', 'Mason', 'Taylor', 'mason.taylor@hotmail.com', '26879512');
 INSERT INTO `storemanagement`.`customer` (`customer_id`, `customer_fname`, `customer_lname`, `email`, `phone`) VALUES ('9', 'Mia', 'Anderson', 'mia.anderson@hotmail.com', '12135498');
 INSERT INTO `storemanagement`.`customer` (`customer_id`, `customer_fname`, `customer_lname`, `email`, `phone`) VALUES ('10', 'Lucas', 'Clark', 'lucas.clark@hotmail.com', '85274196');
-
-
 -- -----------------------------------------------------
 -- Table `storemanagement`.`orders`
 -- -----------------------------------------------------
@@ -55,9 +51,6 @@ INSERT INTO `storemanagement`.`orders` (`order_id`, `customer_id`, `date`, `stat
 INSERT INTO `storemanagement`.`orders` (`order_id`, `customer_id`, `date`, `status`) VALUES ('9', '9', '2023-05-22', 'delivered');
 INSERT INTO `storemanagement`.`orders` (`order_id`, `customer_id`, `date`, `status`) VALUES ('10', '10', '2023-05-25', 'not delivered');
 
-
-
-
 -- -----------------------------------------------------
 -- Table `storemanagement`.`stock`
 -- -----------------------------------------------------
@@ -71,8 +64,6 @@ INSERT INTO `storemanagement`.`stock` (`stock_id`, `item_name`, `quantity`) VALU
 INSERT INTO `storemanagement`.`stock` (`stock_id`, `item_name`, `quantity`) VALUES ('8', 'Cosmic Galaxy Bearbrick', '100');
 INSERT INTO `storemanagement`.`stock` (`stock_id`, `item_name`, `quantity`) VALUES ('9', 'Superman: Man of Steel Deluxe Figure', '100');
 INSERT INTO `storemanagement`.`stock` (`stock_id`, `item_name`, `quantity`) VALUES ('10', 'The Flash: Speed Force Showcase', '100');
-
-
 -- -----------------------------------------------------
 -- Table `storemanagement`.`orderitem`
 -- -----------------------------------------------------
@@ -86,7 +77,6 @@ INSERT INTO `storemanagement`.`orderitem` (`orderitem_id`, `order_id`, `quantity
 INSERT INTO `storemanagement`.`orderitem` (`orderitem_id`, `order_id`, `quantity`, `price`, `stock_id`, `supplier_id`) VALUES ('8', '8', '6', '3600', '8', '1');
 INSERT INTO `storemanagement`.`orderitem` (`orderitem_id`, `order_id`, `quantity`, `price`, `stock_id`, `supplier_id`) VALUES ('9', '9', '1', '5000', '9', '1');
 INSERT INTO `storemanagement`.`orderitem` (`orderitem_id`, `order_id`, `quantity`, `price`, `stock_id`, `supplier_id`) VALUES ('10', '10', '3', '6000', '10', '1');
-
 -- -----------------------------------------------------
 -- Table `storemanagement`.`employee`
 -- -----------------------------------------------------
@@ -100,13 +90,6 @@ INSERT INTO `storemanagement`.`employee` (`employee_id`, `employee_fname`, `empl
 INSERT INTO `storemanagement`.`employee` (`employee_id`, `employee_fname`, `employee_lname`, `gender`, `phone`, `address`, `birthdate`, `email`) VALUES ('8', 'Elijah', 'Hayes', 'Male', '54931818', 'Chiang Mai', '1998-12-11', 'Elijah@hotmail.com');
 INSERT INTO `storemanagement`.`employee` (`employee_id`, `employee_fname`, `employee_lname`, `gender`, `phone`, `address`, `birthdate`, `email`) VALUES ('9', 'Stella', 'Murphy', 'Female', '66688833', 'Chiang Rai', '1998-12-20', 'Stella@hotmail.com');
 INSERT INTO `storemanagement`.`employee` (`employee_id`, `employee_fname`, `employee_lname`, `gender`, `phone`, `address`, `birthdate`, `email`) VALUES ('10', 'Henry', 'Cooper', 'Male', '18479524', 'Chiang Mai', '1997-12-01', 'Henry@hotmail.com');
-
-
--- -----------------------------------------------------
--- Table `storemanagement`.`outofstock`
--- -----------------------------------------------------
-
-
 -- -----------------------------------------------------
 -- Table `storemanagement`.`shipping`
 -- -----------------------------------------------------
@@ -121,3 +104,6 @@ INSERT INTO `storemanagement`.`shipping` (`shipping_id`, `orderid`, `customerid`
 INSERT INTO `storemanagement`.`shipping` (`shipping_id`, `orderid`, `customerid`, `shipping_address`, `shipping_method`) VALUES ('9', '9', '9', 'Melbroune', 'cargo ship');
 INSERT INTO `storemanagement`.`shipping` (`shipping_id`, `orderid`, `customerid`, `shipping_address`, `shipping_method`) VALUES ('10', '10', '10', 'Nonthaburi', 'car');
 
+-- -----------------------------------------------------
+-- Table `storemanagement`.`outofstock`
+-- -----------------------------------------------------

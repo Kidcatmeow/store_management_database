@@ -6,3 +6,6 @@ GROUP BY stock_id,item_name,price,quantity
 ORDER BY total_sales DESC;
 
 SELECT * FROM item_sales_view;
+
+
+

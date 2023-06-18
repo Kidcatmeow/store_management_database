@@ -23,7 +23,6 @@ CREATE TABLE IF NOT EXISTS `storemanagement`.`customer` (
     PRIMARY KEY (`customer_id`))
     ENGINE = InnoDB;
 
-
 -- -----------------------------------------------------
 -- Table `storemanagement`.`user`
 -- -----------------------------------------------------
@@ -33,7 +32,6 @@ CREATE TABLE IF NOT EXISTS `storemanagement`.`users` (
     `password` VARCHAR(45) NULL,
     PRIMARY KEY (`user_id`))
     ENGINE = InnoDB;
-
 
 -- -----------------------------------------------------
 -- Table `storemanagement`.`employee`
@@ -49,7 +47,6 @@ CREATE TABLE IF NOT EXISTS `storemanagement`.`employee` (
     `email` VARCHAR(45) NULL,
     PRIMARY KEY (`employee_id`))
     ENGINE = InnoDB;
-
 
 -- -----------------------------------------------------
 -- Table `storemanagement`.`order`
@@ -68,7 +65,6 @@ CREATE TABLE IF NOT EXISTS `storemanagement`.`orders` (
     ON UPDATE CASCADE)
     ENGINE = InnoDB;
 
-
 -- -----------------------------------------------------
 -- Table `storemanagement`.`supplier`
 -- -----------------------------------------------------
@@ -77,7 +73,6 @@ CREATE TABLE IF NOT EXISTS `storemanagement`.`supplier` (
                                                             `supplier_name` VARCHAR(45) NULL,
     PRIMARY KEY (`supplier_id`))
     ENGINE = InnoDB;
-
 
 -- -----------------------------------------------------
 -- Table `storemanagement`.`stock`
@@ -89,7 +84,6 @@ CREATE TABLE IF NOT EXISTS `storemanagement`.`stock` (
     PRIMARY KEY (`stock_id`),
     UNIQUE INDEX `item_name_UNIQUE` (`item_name` ASC) VISIBLE)
     ENGINE = InnoDB;
-
 
 -- -----------------------------------------------------
 -- Table `storemanagement`.`orderitem`
@@ -122,7 +116,6 @@ CREATE TABLE IF NOT EXISTS `storemanagement`.`orderitem` (
     ON UPDATE CASCADE)
     ENGINE = InnoDB;
 
-
 -- -----------------------------------------------------
 -- Table `storemanagement`.`outofstock`
 -- -----------------------------------------------------
@@ -137,7 +130,6 @@ CREATE TABLE IF NOT EXISTS `storemanagement`.`outofstock` (
     ON DELETE CASCADE
     ON UPDATE CASCADE)
     ENGINE = InnoDB;
-
 
 -- -----------------------------------------------------
 -- Table `storemanagement`.`shipping`

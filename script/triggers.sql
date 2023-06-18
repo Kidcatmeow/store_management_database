@@ -12,9 +12,8 @@ BEGIN
 END;
 //
 
-
 -- **********************************************
--- *   TRIGGER AUTO INSERT INTO OUT OF STOCK TABLE
+-- *   TRIGGER TO AUTO INSERT INTO OUT OF STOCK TABLE
 -- **********************************************
 DELIMITER //
 CREATE TRIGGER insert_into_outofstock
@@ -27,7 +26,6 @@ BEGIN
 end if;
 END;
 //
-
 
 DELIMITER //
 CREATE TRIGGER out_of_stock_del
